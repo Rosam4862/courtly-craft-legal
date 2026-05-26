@@ -93,8 +93,8 @@ export default function ContactPage() {
               <h3 className="font-display text-2xl">Contact Information</h3>
               <ul className="mt-6 space-y-4 text-sm">
                 <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-gold" /> 488 Madison Avenue, Suite 1800<br />New York, NY 10022</li>
-                <li className="flex gap-3"><Phone className="h-5 w-5 shrink-0 text-gold" /> (212) 555-0140</li>
-                <li className="flex gap-3"><Mail className="h-5 w-5 shrink-0 text-gold" /> info@kaplanwilliam.com</li>
+                <li className="flex gap-3"><Phone className="h-5 w-5 shrink-0 text-gold" /> +1 (760) 393-4317</li>
+                <li className="flex gap-3"><Mail className="h-5 w-5 shrink-0 text-gold" /> info@kaplanwilliamlawfirm.com</li>
               </ul>
             </div>
             <div className="rounded-2xl border bg-card p-8 shadow-elegant">
@@ -108,9 +108,9 @@ export default function ContactPage() {
                 <li className="flex justify-between"><span>Sunday</span><span>Emergency only</span></li>
               </ul>
             </div>
-            <a href="tel:+12125550140" className="block rounded-2xl bg-gradient-gold p-8 text-navy-deep shadow-gold transition hover:scale-[1.02]">
+            <a href="tel:+17603934317" className="block rounded-2xl bg-gradient-gold p-8 text-navy-deep shadow-gold transition hover:scale-[1.02]">
               <p className="text-xs font-semibold uppercase tracking-widest">24/7 Emergency Line</p>
-              <p className="mt-2 font-display text-3xl">(212) 555-0140</p>
+              <p className="mt-2 font-display text-3xl">+1 (760) 393-4317</p>
               <p className="mt-1 text-sm">Arrested, injured or facing an urgent matter? Call now.</p>
             </a>
           </div>

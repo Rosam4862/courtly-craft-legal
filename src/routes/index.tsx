@@ -52,8 +52,8 @@ function HomePage() {
             <Link to="/contact" className="group inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-4 font-semibold text-navy-deep shadow-gold transition hover:scale-105">
               Free Consultation <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
             </Link>
-            <a href="tel:+12125550140" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:border-gold hover:text-gold">
-              <Phone className="h-4 w-4" /> Call Now: (212) 555-0140
+            <a href="tel:+17603934317" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:border-gold hover:text-gold">
+              <Phone className="h-4 w-4" /> Call Now: +1 (760) 393-4317
             </a>
           </motion.div>
         </div>
@@ -217,7 +217,7 @@ function HomePage() {
           </div>
           <div className="flex flex-wrap gap-4">
             <Link to="/contact" className="rounded-full bg-gradient-gold px-7 py-4 font-semibold text-navy-deep shadow-gold transition hover:scale-105">Book Consultation</Link>
-            <a href="tel:+12125550140" className="rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:border-gold hover:text-gold">Call (212) 555-0140</a>
+            <a href="tel:+17603934317" className="rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:border-gold hover:text-gold">Call +1 (760) 393-4317</a>
           </div>
         </div>
       </section>
