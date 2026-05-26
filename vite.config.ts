@@ -6,10 +6,28 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-// @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
+  },
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1500,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (!id.includes("node_modules")) return;
+            if (id.includes("framer-motion") || id.includes("motion-dom") || id.includes("motion-utils")) return "framer-motion";
+            if (id.includes("lucide-react")) return "lucide";
+            if (id.includes("@tanstack")) return "tanstack";
+            if (id.includes("@radix-ui")) return "radix";
+            if (id.includes("@supabase")) return "supabase";
+            if (id.includes("react-dom")) return "react-dom";
+            if (id.includes("/react/") || id.includes("react-router")) return "react";
+            if (id.includes("zod") || id.includes("react-hook-form")) return "forms";
+          },
+        },
+      },
+    },
   },
 });
