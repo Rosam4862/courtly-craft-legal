@@ -92,7 +92,8 @@ export default function ContactPage() {
             <div className="rounded-2xl bg-navy p-8 text-white shadow-elegant">
               <h3 className="font-display text-2xl">Contact Information</h3>
               <ul className="mt-6 space-y-4 text-sm">
-                <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-gold" /> 488 Madison Avenue, Suite 1800<br />New York, NY 10022</li>
+                <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-gold" /> 10880 Wilshire Blvd, Suite 900<br />Los Angeles, CA 90024</li>
+                <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-gold" /> 150 King St W, Suite 2000<br />Toronto, ON M5H 1J9, Canada</li>
                 <li className="flex gap-3"><Phone className="h-5 w-5 shrink-0 text-gold" /> +1 (760) 393-4317</li>
                 <li className="flex gap-3"><Mail className="h-5 w-5 shrink-0 text-gold" /> info@kaplanwilliamlawfirm.com</li>
               </ul>
@@ -122,7 +123,7 @@ export default function ContactPage() {
           <div className="overflow-hidden rounded-2xl border shadow-elegant">
             <iframe
               title="Office location"
-              src="https://www.google.com/maps?q=488+Madison+Avenue,+New+York,+NY&output=embed"
+              src="https://www.google.com/maps?q=10880+Wilshire+Blvd,+Los+Angeles,+CA&output=embed"
               className="h-[420px] w-full"
               loading="lazy"
             />
