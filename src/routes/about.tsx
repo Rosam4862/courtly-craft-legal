@@ -26,7 +26,7 @@ const timeline = [
   { year: "1997", title: "Partnership Formed", desc: "Sarah William joins as managing partner; firm expands to litigation." },
   { year: "2008", title: "$50M Verdict", desc: "Record class-action verdict in a landmark consumer protection case." },
   { year: "2015", title: "National Recognition", desc: "Named to U.S. News Best Law Firms list — Tier 1." },
-  { year: "2024", title: "Today", desc: "60 attorneys, four practice groups, offices in NY, LA and Miami." },
+  { year: "2024", title: "Today", desc: "60 attorneys, four practice groups, offices in California and Toronto." },
 ];
 
 export default function AboutPage() {
@@ -83,7 +83,7 @@ export default function AboutPage() {
               { name: "Marcus Rhodes", role: "Senior Trial Attorney" },
               { name: "Priya Anand", role: "Partner, Corporate" },
               { name: "James Okafor", role: "Partner, Criminal Defense" },
-              { name: "Lena Voss", role: "Partner, Family Law" },
+              { name: "Greg Brown", role: "Partner, Family Law" },
             ].map((m) => (
               <div key={m.name} className="overflow-hidden rounded-2xl bg-card shadow-elegant">
                 <UploadableImage id={`team-${m.name}`} alt={m.name} aspect="aspect-[3/4]" rounded="rounded-none" />

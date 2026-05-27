@@ -19,7 +19,7 @@ const attorneys = [
   { name: "Marcus Rhodes", role: "Senior Trial Attorney", focus: "Car Accidents, Wrongful Death", education: "Columbia Law School, J.D. 2003", admissions: "NY, FL", awards: "Trial Lawyer of the Year — NYSBA 2022", years: "21 yrs" },
   { name: "Priya Anand", role: "Partner", focus: "Corporate, M&A", education: "Stanford Law School, J.D. 2008", admissions: "NY, CA", awards: "Chambers USA — Ranked Lawyer", years: "16 yrs" },
   { name: "James Okafor", role: "Partner", focus: "Federal Criminal Defense", education: "NYU Law, J.D. 2005", admissions: "NY, NJ, DC, Federal", awards: "Former AUSA, SDNY", years: "19 yrs" },
-  { name: "Lena Voss", role: "Partner", focus: "Family Law, Estates", education: "Georgetown Law, J.D. 2007", admissions: "NY, CT", awards: "Top 50 Women in Law — 2024", years: "17 yrs" },
+  { name: "Greg Brown", role: "Partner", focus: "Family Law, Estates", education: "Georgetown Law, J.D. 2007", admissions: "CA, ON", awards: "Top 40 Under 40 — National Law Journal 2024", years: "17 yrs" },
 ];
 
 export default function AttorneysPage() {
