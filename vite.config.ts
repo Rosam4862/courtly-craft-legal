@@ -11,7 +11,6 @@ export default defineConfig({
     server: { entry: "server" },
   },
   vite: {
-    base: '/courtly-craft-legal/',
     build: {
       chunkSizeWarningLimit: 1500,
       rollupOptions: {
