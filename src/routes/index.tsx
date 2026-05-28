@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Phone, ArrowRight, Shield, Award, Users, Scale, Car, Heart, Briefcase, Globe, Landmark, FileText, Handshake, Gavel, Star, CheckCircle2 } from "lucide-react";
 import { UploadableImage } from "@/components/UploadableImage";
 import { practiceImages } from "@/lib/practice-images";
+import { teamImages, brandLogo } from "@/lib/team-images";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -128,7 +129,7 @@ function HomePage() {
             </ul>
           </div>
           <div className="relative">
-            <UploadableImage id="why-us" alt="Our Team" aspect="aspect-[4/5]" />
+            <UploadableImage id="why-us" alt="Our Team" aspect="aspect-[4/5]" defaultSrc={brandLogo} />
             <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-navy p-6 text-white shadow-elegant md:block">
               <Award className="h-8 w-8 text-gold" />
               <p className="mt-3 font-display text-xl">Super Lawyers®</p>
@@ -155,7 +156,7 @@ function HomePage() {
               { name: "Marcus Rhodes", role: "Senior Trial Attorney" },
             ].map((a) => (
               <div key={a.name} className="group overflow-hidden rounded-2xl bg-card shadow-elegant">
-                <UploadableImage id={`att-spot-${a.name}`} alt={a.name} aspect="aspect-[3/4]" rounded="rounded-none" />
+                <UploadableImage id={`att-spot-${a.name}`} alt={a.name} aspect="aspect-[3/4]" rounded="rounded-none" defaultSrc={teamImages[a.name]} />
                 <div className="p-6">
                   <h3 className="font-display text-2xl text-navy">{a.name}</h3>
                   <p className="text-sm uppercase tracking-widest text-gold">{a.role}</p>
