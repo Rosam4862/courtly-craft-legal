@@ -8,7 +8,15 @@ export const Route = createFileRoute("/case-results")({
     meta: [
       { title: "Case Results — Kaplan & William Law Firm" },
       { name: "description", content: "Verdicts and settlements demonstrating our record of results across personal injury, criminal defense and commercial litigation." },
+      { property: "og:title", content: "Case Results — Kaplan & William Law Firm" },
+      { property: "og:description", content: "Verdicts and settlements demonstrating our record of results across personal injury, criminal defense and commercial litigation." },
+      { property: "og:url", content: "https://kaplanwilliamlawfirm.com/case-results" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Case Results — Kaplan & William Law Firm" },
+      { name: "twitter:description", content: "Verdicts and settlements demonstrating our record of results across personal injury, criminal defense and commercial litigation." },,
     ],
+    links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/case-results" }],
   }),
   component: CaseResultsPage,
 });

@@ -10,7 +10,15 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "About Us — Kaplan & William Law Firm" },
       { name: "description", content: "Four decades of advocacy. Learn about the people, values and history that define Kaplan & William." },
+      { property: "og:title", content: "About Us — Kaplan & William Law Firm" },
+      { property: "og:description", content: "Four decades of advocacy. Learn about the people, values and history that define Kaplan & William." },
+      { property: "og:url", content: "https://kaplanwilliamlawfirm.com/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "About Us — Kaplan & William Law Firm" },
+      { name: "twitter:description", content: "Four decades of advocacy. Learn about the people, values and history that define Kaplan & William." },,
     ],
+    links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/about" }],
   }),
   component: AboutPage,
 });
