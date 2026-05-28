@@ -15,7 +15,7 @@ export const Route = createFileRoute("/attorneys")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Our Attorneys — Kaplan & William Law Firm" },
-      { name: "twitter:description", content: "Meet the trial lawyers, partners and associates at Kaplan & William — a team built for results." },,
+      { name: "twitter:description", content: "Meet the trial lawyers, partners and associates at Kaplan & William — a team built for results." },
     ],
     links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/attorneys" }],
   }),

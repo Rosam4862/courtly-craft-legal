@@ -16,7 +16,7 @@ export const Route = createFileRoute("/testimonials")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Testimonials — Kaplan & William Law Firm" },
-      { name: "twitter:description", content: "Real stories from clients who trusted Kaplan & William with their most important legal matters." },,
+      { name: "twitter:description", content: "Real stories from clients who trusted Kaplan & William with their most important legal matters." },
     ],
     links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/testimonials" }],
   }),

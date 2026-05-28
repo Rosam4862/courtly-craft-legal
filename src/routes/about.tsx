@@ -16,7 +16,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "About Us — Kaplan & William Law Firm" },
-      { name: "twitter:description", content: "Four decades of advocacy. Learn about the people, values and history that define Kaplan & William." },,
+      { name: "twitter:description", content: "Four decades of advocacy. Learn about the people, values and history that define Kaplan & William." },
     ],
     links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/about" }],
   }),

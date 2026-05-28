@@ -15,7 +15,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Contact — Kaplan & William Law Firm" },
-      { name: "twitter:description", content: "Schedule a free, confidential consultation. Available 24/7 for emergency matters." },,
+      { name: "twitter:description", content: "Schedule a free, confidential consultation. Available 24/7 for emergency matters." },
     ],
     links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/contact" }],
   }),

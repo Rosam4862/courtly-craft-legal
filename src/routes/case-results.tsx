@@ -14,7 +14,7 @@ export const Route = createFileRoute("/case-results")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Case Results — Kaplan & William Law Firm" },
-      { name: "twitter:description", content: "Verdicts and settlements demonstrating our record of results across personal injury, criminal defense and commercial litigation." },,
+      { name: "twitter:description", content: "Verdicts and settlements demonstrating our record of results across personal injury, criminal defense and commercial litigation." },
     ],
     links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/case-results" }],
   }),
