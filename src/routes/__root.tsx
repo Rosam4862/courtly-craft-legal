@@ -63,6 +63,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          name: "Kaplan & William Law Firm",
+          url: "https://kaplanwilliamlawfirm.com",
+          telephone: "+1-760-393-4317",
+          areaServed: ["US", "CA"],
+          address: { "@type": "PostalAddress", addressRegion: "California", addressCountry: "US" },
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
