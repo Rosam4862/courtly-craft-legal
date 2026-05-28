@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import { UploadableImage } from "@/components/UploadableImage";
 import { Heart, Car, Gavel, Users, Briefcase, Globe, Landmark, FileText, Handshake, ArrowRight } from "lucide-react";
+import { practiceImages } from "@/lib/practice-images";
 
 export const Route = createFileRoute("/practice-areas")({
   head: () => ({
@@ -35,7 +36,7 @@ export default function PracticeAreasPage() {
             const Icon = a.icon;
             return (
               <div key={a.title} className="group flex flex-col overflow-hidden rounded-2xl border bg-card transition hover:-translate-y-1 hover:shadow-elegant">
-                <UploadableImage id={`pa-page-${a.title}`} alt={a.title} aspect="aspect-[16/10]" rounded="rounded-none" />
+                <UploadableImage id={`pa-page-${a.title}`} alt={a.title} aspect="aspect-[16/10]" rounded="rounded-none" defaultSrc={practiceImages[a.title]} />
                 <div className="flex flex-1 flex-col p-7">
                   <div className="mb-4 inline-grid h-12 w-12 place-items-center rounded-lg bg-navy text-gold">
                     <Icon className="h-6 w-6" />
