@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import { UploadableImage } from "@/components/UploadableImage";
+import { teamImages } from "@/lib/team-images";
 import { GraduationCap, Award, Scale, Briefcase } from "lucide-react";
 
 export const Route = createFileRoute("/attorneys")({
@@ -30,7 +31,7 @@ export default function AttorneysPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2">
           {attorneys.map((a) => (
             <article key={a.name} className="grid gap-6 rounded-2xl border bg-card p-6 shadow-elegant md:grid-cols-[200px_1fr]">
-              <UploadableImage id={`attorney-${a.name}`} alt={a.name} aspect="aspect-[3/4]" />
+              <UploadableImage id={`attorney-${a.name}`} alt={a.name} aspect="aspect-[3/4]" defaultSrc={teamImages[a.name]} />
               <div>
                 <h3 className="font-display text-2xl text-navy">{a.name}</h3>
                 <p className="text-sm uppercase tracking-widest text-gold">{a.role}</p>

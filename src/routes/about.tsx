@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/PageHero";
 import { UploadableImage } from "@/components/UploadableImage";
+import { teamImages, brandLogo } from "@/lib/team-images";
 import { Shield, Heart, Scale, Award } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
@@ -36,7 +37,7 @@ export default function AboutPage() {
 
       <section className="bg-background py-24">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
-          <UploadableImage id="about-story" alt="Our Story" aspect="aspect-[4/5]" />
+          <UploadableImage id="about-story" alt="Our Story" aspect="aspect-[4/5]" defaultSrc={brandLogo} />
           <div>
             <p className="mb-3 text-xs uppercase tracking-[0.4em] text-gold">Our Story</p>
             <h2 className="font-display text-4xl text-navy">A Firm Defined by the Clients We Serve</h2>
@@ -86,7 +87,7 @@ export default function AboutPage() {
               { name: "Greg Brown", role: "Partner, Family Law" },
             ].map((m) => (
               <div key={m.name} className="overflow-hidden rounded-2xl bg-card shadow-elegant">
-                <UploadableImage id={`team-${m.name}`} alt={m.name} aspect="aspect-[3/4]" rounded="rounded-none" />
+                <UploadableImage id={`team-${m.name}`} alt={m.name} aspect="aspect-[3/4]" rounded="rounded-none" defaultSrc={teamImages[m.name]} />
                 <div className="p-6">
                   <h3 className="font-display text-xl text-navy">{m.name}</h3>
                   <p className="text-sm uppercase tracking-widest text-gold">{m.role}</p>

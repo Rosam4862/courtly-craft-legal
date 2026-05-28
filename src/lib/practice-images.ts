@@ -6,6 +6,7 @@ import corporateLaw from "@/assets/practice/corporate-law.jpeg";
 import immigrationLaw from "@/assets/practice/immigration-law.jpeg";
 import inheritanceClaim from "@/assets/practice/inheritance-claim.webp";
 import bankruptcy from "@/assets/practice/bankruptcy.jpeg";
+import consignment from "@/assets/practice/consignment.webp";
 
 export const practiceImages: Record<string, string> = {
   "Personal Injury": personalInjury,
@@ -16,4 +17,5 @@ export const practiceImages: Record<string, string> = {
   "Immigration Law": immigrationLaw,
   "Inheritance Claim": inheritanceClaim,
   "Bankruptcy": bankruptcy,
+  "Consignment": consignment,
 };
