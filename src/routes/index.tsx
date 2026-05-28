@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Phone, ArrowRight, Shield, Award, Users, Scale, Car, Heart, Briefcase, Globe, Landmark, FileText, Handshake, Gavel, Star, CheckCircle2 } from "lucide-react";
 import { UploadableImage } from "@/components/UploadableImage";
+import { practiceImages } from "@/lib/practice-images";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -90,7 +91,7 @@ function HomePage() {
               return (
                 <motion.div key={p.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}
                   className="group overflow-hidden rounded-2xl bg-card shadow-elegant transition hover:-translate-y-2">
-                  <UploadableImage id={`pa-${p.title}`} alt={p.title} aspect="aspect-[16/10]" rounded="rounded-none" />
+                  <UploadableImage id={`pa-${p.title}`} alt={p.title} aspect="aspect-[16/10]" rounded="rounded-none" defaultSrc={practiceImages[p.title]} />
                   <div className="p-7">
                     <div className="mb-4 inline-grid h-12 w-12 place-items-center rounded-lg bg-navy text-gold">
                       <Icon className="h-6 w-6" />
