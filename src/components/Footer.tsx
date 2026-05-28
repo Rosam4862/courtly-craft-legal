@@ -43,7 +43,7 @@ export function Footer() {
             <li className="flex gap-3"><MapPin className="h-4 w-4 shrink-0 text-gold" /> 10880 Wilshire Blvd, Suite 900<br />Los Angeles, CA 90024</li>
             <li className="flex gap-3"><MapPin className="h-4 w-4 shrink-0 text-gold" /> 150 King St W, Suite 2000<br />Toronto, ON M5H 1J9, Canada</li>
             <li className="flex gap-3"><Phone className="h-4 w-4 shrink-0 text-gold" /> +1 (760) 393-4317</li>
-            <li className="flex gap-3"><Mail className="h-4 w-4 shrink-0 text-gold" /> info@kaplanwilliamlawfirm.com</li>
+            <li className="flex gap-3"><Mail className="h-4 w-4 shrink-0 text-gold" /><span>info@kaplanwilliamlawfirm.com</span></li>
           </ul>
         </div>
       </div>
