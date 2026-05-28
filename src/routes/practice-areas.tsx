@@ -9,7 +9,15 @@ export const Route = createFileRoute("/practice-areas")({
     meta: [
       { title: "Practice Areas — Kaplan & William Law Firm" },
       { name: "description", content: "Personal injury, criminal defense, family, corporate, immigration, bankruptcy, inheritance and consignment law representation." },
+      { property: "og:title", content: "Practice Areas — Kaplan & William Law Firm" },
+      { property: "og:description", content: "Personal injury, criminal defense, family, corporate, immigration, bankruptcy, inheritance and consignment law representation." },
+      { property: "og:url", content: "https://kaplanwilliamlawfirm.com/practice-areas" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Practice Areas — Kaplan & William Law Firm" },
+      { name: "twitter:description", content: "Personal injury, criminal defense, family, corporate, immigration, bankruptcy, inheritance and consignment law representation." },
     ],
+    links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/practice-areas" }],
   }),
   component: PracticeAreasPage,
 });

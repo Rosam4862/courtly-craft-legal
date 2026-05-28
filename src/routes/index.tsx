@@ -10,7 +10,15 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Kaplan & William Law Firm — Experienced Attorneys Fighting For Your Rights" },
       { name: "description", content: "Top-rated personal injury, criminal defense, family, corporate and immigration lawyers. Free consultation. Over $500M recovered for clients." },
+      { property: "og:title", content: "Kaplan & William Law Firm — Experienced Attorneys Fighting For Your Rights" },
+      { property: "og:description", content: "Top-rated personal injury, criminal defense, family, corporate and immigration lawyers. Free consultation. Over $500M recovered for clients." },
+      { property: "og:url", content: "https://kaplanwilliamlawfirm.com/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Kaplan & William Law Firm — Experienced Attorneys Fighting For Your Rights" },
+      { name: "twitter:description", content: "Top-rated personal injury, criminal defense, family, corporate and immigration lawyers. Free consultation. Over $500M recovered for clients." },
     ],
+    links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/" }],
   }),
   component: HomePage,
 });

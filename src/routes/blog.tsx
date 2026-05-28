@@ -9,7 +9,15 @@ export const Route = createFileRoute("/blog")({
     meta: [
       { title: "Legal Insights & Blog — Kaplan & William Law Firm" },
       { name: "description", content: "Practical legal insights, case commentary and guidance from the attorneys at Kaplan & William." },
+      { property: "og:title", content: "Legal Insights & Blog — Kaplan & William Law Firm" },
+      { property: "og:description", content: "Practical legal insights, case commentary and guidance from the attorneys at Kaplan & William." },
+      { property: "og:url", content: "https://kaplanwilliamlawfirm.com/blog" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Legal Insights & Blog — Kaplan & William Law Firm" },
+      { name: "twitter:description", content: "Practical legal insights, case commentary and guidance from the attorneys at Kaplan & William." },
     ],
+    links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/blog" }],
   }),
   component: BlogPage,
 });

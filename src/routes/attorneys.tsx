@@ -9,7 +9,15 @@ export const Route = createFileRoute("/attorneys")({
     meta: [
       { title: "Our Attorneys — Kaplan & William Law Firm" },
       { name: "description", content: "Meet the trial lawyers, partners and associates at Kaplan & William — a team built for results." },
+      { property: "og:title", content: "Our Attorneys — Kaplan & William Law Firm" },
+      { property: "og:description", content: "Meet the trial lawyers, partners and associates at Kaplan & William — a team built for results." },
+      { property: "og:url", content: "https://kaplanwilliamlawfirm.com/attorneys" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Our Attorneys — Kaplan & William Law Firm" },
+      { name: "twitter:description", content: "Meet the trial lawyers, partners and associates at Kaplan & William — a team built for results." },
     ],
+    links: [{ rel: "canonical", href: "https://kaplanwilliamlawfirm.com/attorneys" }],
   }),
   component: AttorneysPage,
 });
